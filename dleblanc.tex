@@ -1,0 +1,225 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.6.3, 04 Oct 2021) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+% If using xelatex or lualatex:
+\setmainfont{Lato}
+\else
+% If using pdflatex:
+\usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{163D81}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+\input{pubs-authoryear.cfg}
+
+%% Use (and optionally edit if necessary) this .cfg if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+% \input{pubs-num.cfg}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+	\name{David Leblanc}
+	\tagline{}
+	% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+	%% You can add multiple photos on the left or right
+	%\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+	% \photoL{2cm}{Yacht_High,Suitcase_High}
+	\personalinfo{%
+		% Not all of these are required!
+		% You can add your own with \printinfo{symbol}{detail}
+		\email{lblancdavid@gmail.com}
+		\phone{(775) 870-0408}
+		\mailaddress{345 Stewart Street, 89502}
+		\location{Reno, NV}
+		\linkedin{david-leblanc-935201166}
+		\github{leblancdavid}
+	}
+	
+	\makecvheader
+	
+	%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+	\AtBeginEnvironment{itemize}{\small}
+	
+	%% Set the left/right column width ratio to 6:4.
+	\columnratio{0.6}
+	
+	% Start a 2-column paracol. Both the left and right columns will automatically
+	% break across pages if things get too long.
+	\begin{paracol}{2}
+		
+		\cvsection{Experience}
+		
+		\cvevent{Senior Software Engineer}{Hamilton Company}{January 2013 -- Ongoing}{Reno, NV}
+		\begin{itemize}
+			\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
+			\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
+			\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
+			\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+		\end{itemize}
+		
+		\divider
+		
+		\cvevent{Graduate Research}{University of Nevada, Reno}{Fall 2015 -- Spring 2017}{Reno, NV}
+		\begin{itemize}
+			\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
+			\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
+			\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
+			\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+		\end{itemize}
+		
+		\divider
+		
+		\cvevent{Computer Vision Research Intern}{Eye-Com Corporation}{May 2010 -- November 2012}{Reno, NV}
+		\begin{itemize}
+			\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
+			\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
+			\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
+			\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+		\end{itemize}
+		
+		\divider
+		
+		\cvevent{Undergraduate Research in Computer Vision}{University of Nevada Reno}{October 2009 -- May 2012}{Reno, NV}
+		\begin{itemize}
+			\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
+			\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
+			\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
+			\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+		\end{itemize}
+		
+		% \divider
+		
+		% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+		
+		% \begin{itemize}
+			% \item Joined the company as employe \#20 and female employee \#1
+			% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+			% \end{itemize}
+		
+		\cvsection{Publications}
+		
+		%\nocite{*}
+		
+		D. Leblanc and S. Louis, Early Prediction of a Game Outcome in StarCraft 2, 28th
+		International Conference on Computers and Their Applications 2013 (CATA-2013),
+		2013
+		
+
+		%% Switch to the right column. This will now automatically move to the second
+		%% page if the content is too long.
+		\switchcolumn
+		
+		\cvsection{Skills}
+		
+		\cvachievement{\faCode}{Front End}{\cvtag{HTML}\cvtag{CSS}\cvtag{JavaScript}\cvtag{Angular (JS \& 2.0+)}\cvtag{Flutter}\cvtag{React}\cvtag{WPF}}
+		
+		\divider
+		
+		\cvachievement{\faServer}{Back End}{\cvtag{C\# (.NET \& .NET Core)}\cvtag{C++}\cvtag{Python}\cvtag{NodeJS}\faWindows \faUbuntu}
+		
+		\divider
+		
+		\cvachievement{\faCodeBranch}{Source Control}{\cvtag{Git}\cvtag{TFS-VC}\cvtag{Subversion}}
+		
+		\divider
+		
+		\cvachievement{\faTools}{Applications, Frameworks \& Tools}{\cvtag{Visual Studio}\cvtag{OpenCV}\cvtag{ML.NET}\cvtag{xUnit}\cvtag{Material Design}\cvtag{Bootstrap}\cvtag{Google Cloud}\cvtag{TFS}\cvtag{Jenkins}\cvtag{Redmine}\cvtag{Docker}\cvtag{Doxygen}\cvtag{Doxygen}\cvtag{LaTeX}}
+		
+
+		\cvsection{Education}
+		
+		\cvevent{M.S.\ in Computer Science}{University of Nevada, Reno}{April 2017}{}
+		\begin{itemize}
+			\item Thesis: Automated Sand Dune Crest-Line and Geomorphological Metric Computation on Planetary Surfaces
+		\end{itemize}
+		\divider
+		
+		\cvevent{B.S.\ in Symbolic Systems}{University of Nevada, Reno}{December 2011}{}
+		\begin{itemize}
+			\item Emphasis on Intelligent Systems (Machine Learning, Computer Vision, Robotics)
+			\item Senior Project: Segway Robot with obstacle avoidance, collision detection, and visual environment recognition
+		\end{itemize}
+	
+		\cvsection{Languages}
+		
+		\cvskill{English}{5}
+		% \divider
+		
+		\cvskill{French}{5}
+		% \divider
+		
+		\newpage
+		
+	
+		
+		\cvsection{Referees}
+		
+		% \cvref{name}{email}{mailing address}
+		\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+		{Address Line 1\\Address line 2}
+		
+		\divider
+		
+		\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
+		{Address Line 1\\Address line 2}
+		
+	\end{paracol}
+	
+\end{document}
